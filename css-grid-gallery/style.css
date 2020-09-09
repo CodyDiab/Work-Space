@@ -1,5 +1,38 @@
 
+
+.item{
+    border-color:black;
+    border:2px;
+}
+
+.one{
+  grid-area: header;
+  background-color: blueviolet;
+}
+.two{
+    grid-area:main;
+    background-color: crimson;
+}
+.three{
+    grid-area:sidebar;
+    background-color: royalblue;
+}
+.four{
+    grid-area:footer;
+    background-color:greenyellow;
+}
+
+
 .container {
     display: grid;
-    
+    column-gap:5px;
+    row-gap:10px;
+    grid-template-columns:25% 25% 25% 25%;
+    grid-template-rows: 90px 200px 50px;
+    grid-template-areas:
+     "header header header header"
+     " main main . sidebar"
+     "footer footer footer footer"
 }
+
+
