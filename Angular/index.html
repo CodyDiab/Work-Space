@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
 
-<div ng-app="app" ng-controller="myCtrl">
+<!-- <div ng-app="app" ng-controller="myCtrl">
   <p>First Name: <input type="text" ng-model=" firstName"></p> <br>
  <p>Last Name: <input type="text" ng-model="lastName"></p> <br>
   <p >Full Name:{{firstName + '' + lastName}}</p>
   <p>Angular expression : {{5+5}}</p>
-
+ <directive></directive>
+ <div class="directive"></div>
 <input style="background-color:{{myCol}}" ng-model="myCol">
+</div> -->
+<div ng-controller="Search">
+    <p>The ID is {{greeting.id}}</p>
+    <p>The content is {{greeting.content}}</p>
 </div>
-
 <script src="angular.js"></script>
 </body>
 </html>
