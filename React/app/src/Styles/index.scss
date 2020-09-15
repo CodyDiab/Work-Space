@@ -27,3 +27,44 @@ $maincolour:rgb(37, 35, 37);
     color: white;
     text-align: center;
 }
+
+.main-field{
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.email-input{
+    grid-area:email;
+   
+}
+.pass-input{
+    grid-area:password;
+    
+}
+.lgnbtn{
+    grid-area:button;
+   
+
+}
+.login{
+    width:60vh;
+    justify-items: center;
+    align-items: center;
+    
+    align-content: center;
+    row-gap:15px;
+    margin-top: 20vh;
+    background-color: $maincolour;
+    display: grid;
+    grid-template-rows:60px 60px 50px;
+    grid-template-columns: auto 50px 50px auto;
+    grid-template-areas:
+    
+    ". email email ."
+  
+    ". password password ."
+
+    ". button button."
+   
+}
